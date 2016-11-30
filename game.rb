@@ -63,7 +63,7 @@ class Game
 
         player.move(board)
         position_before_set = player.current_space()
-        puts "#{player.name()} has moved to space #{player.current_space()}"
+        puts "#{player.name()} moved to space #{player.current_space()}"
         player.set(board.spaces[player.current_space].end_space)
         position_after_set = player.current_space()
 

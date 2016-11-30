@@ -15,7 +15,9 @@ end
 
 def move(board)
   win_space = board.spaces.index(board.spaces.last())
-  @current_space += rand(1..6)
+  roll = rand(1..6)
+  puts "#{@name} rolled a #{roll}"
+  @current_space += roll
   if @current_space > win_space
     set(win_space)
   end
