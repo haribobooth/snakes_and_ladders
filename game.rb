@@ -4,7 +4,7 @@ require_relative ('space.rb')
 
 class Game
   def random_space
-    random = rand(1..19)
+    random = rand(1..40)
     return random
 
   end
@@ -39,6 +39,27 @@ class Game
       space_18 = Space.new()
       space_19 = Space.new()
       space_20 = Space.new()
+      space_21 = Space.new()
+      space_22 = Space.new()
+      space_23 = Space.new()
+      space_24 = Space.new()
+      space_25 = Space.new()
+      space_26 = Space.new()
+      space_27 = Space.new()
+      space_28 = Space.new()
+      space_29 = Space.new()
+      space_30 = Space.new()
+      space_31 = Space.new()
+      space_32 = Space.new()
+      space_33 = Space.new()
+      space_34 = Space.new()
+      space_35 = Space.new()
+      space_36 = Space.new()
+      space_37 = Space.new()
+      space_38 = Space.new()
+      space_39 = Space.new()
+      space_40 = Space.new()
+      space_41 = Space.new()
 
 
 
@@ -64,6 +85,27 @@ class Game
       board.add_space_normal(space_18)
       board.add_space_normal(space_19)
       board.add_space_normal(space_20)
+      board.add_space_normal(space_21)
+      board.add_space_normal(space_22)
+      board.add_space_special(space_23, random_space()) #ladder
+      board.add_space_normal(space_24)
+      board.add_space_normal(space_25)
+      board.add_space_normal(space_26)
+      board.add_space_special(space_27, random_space()) #snake
+      board.add_space_normal(space_28)
+      board.add_space_normal(space_29)
+      board.add_space_normal(space_30)
+      board.add_space_special(space_30, random_space()) #snake
+      board.add_space_normal(space_32)
+      board.add_space_special(space_33, random_space()) #ladder
+      board.add_space_normal(space_34)
+      board.add_space_normal(space_35)
+      board.add_space_normal(space_36)
+      board.add_space_normal(space_37)
+      board.add_space_special(space_38, random_space()) #snake
+      board.add_space_normal(space_39)
+      board.add_space_normal(space_40)
+      board.add_space_normal(space_41)
 
       board.add_player(player_1)
       board.add_player(player_2)
