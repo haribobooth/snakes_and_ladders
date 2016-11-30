@@ -135,7 +135,7 @@ class Game
       puts "Winner: #{board.winner()}"
     end
   end
-  end
+end
 
 game = Game.new()
 
