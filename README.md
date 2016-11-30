@@ -1,2 +1,2 @@
 # Snakes-Ladder
-Snakes &amp; ladders - Harrison Booth &amp; David Scott
+Snakes &amp; ladders - Harrison Allan Booth &amp; David Scott
