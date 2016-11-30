@@ -2,8 +2,8 @@ require_relative ('board.rb')
 
 class Player
 
-  attr_reader :name, :current_space
-  attr_accessor :current_space #delete after testing
+  attr_reader :name
+  attr_accessor :current_space
 
 #--------------Setup-----------------
 def initialize(name)
