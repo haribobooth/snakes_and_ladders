@@ -3,6 +3,12 @@ require_relative ('player.rb')
 require_relative ('space.rb')
 
 class Game
+  def random_space
+    random = rand(1..19)
+    return random
+
+  end
+
 
   def setup_and_play()
     board = Board.new()
@@ -32,25 +38,27 @@ class Game
       space_19 = Space.new()
       space_20 = Space.new()
 
+
+
     # Add Spaces to board
       board.add_space_normal(space_0)
       board.add_space_normal(space_1)
-      board.add_space_special(space_2, 8) #ladder
+      board.add_space_special(space_2, random_space()) #ladder
       board.add_space_normal(space_3)
       board.add_space_normal(space_4)
       board.add_space_normal(space_5)
-      board.add_space_special(space_6, 1) #snake
+      board.add_space_special(space_6, random_space()) #snake
       board.add_space_normal(space_7)
       board.add_space_normal(space_8)
       board.add_space_normal(space_9)
-      board.add_space_special(space_10, 5) #snake
+      board.add_space_special(space_10, random_space()) #snake
       board.add_space_normal(space_11)
-      board.add_space_special(space_12, 15) #ladder
+      board.add_space_special(space_12, random_space()) #ladder
       board.add_space_normal(space_13)
       board.add_space_normal(space_14)
       board.add_space_normal(space_15)
       board.add_space_normal(space_16)
-      board.add_space_special(space_17, 11) #snake
+      board.add_space_special(space_17, random_space()) #snake
       board.add_space_normal(space_18)
       board.add_space_normal(space_19)
       board.add_space_normal(space_20)
