@@ -14,6 +14,8 @@ class Game
     board = Board.new()
     player_1 = Player.new("Dave")
     player_2 = Player.new("Harrison")
+    player_3 = Player.new("Doreen")
+    player_4 = Player.new("Morag")
     
     # Create Spaces
       space_0 = Space.new()
@@ -65,6 +67,8 @@ class Game
 
       board.add_player(player_1)
       board.add_player(player_2)
+      board.add_player(player_3)
+      board.add_player(player_4)
 
     while board.winner() == nil
       board.players.cycle do |player|
